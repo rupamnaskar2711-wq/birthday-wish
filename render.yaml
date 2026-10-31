@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: birthdayverse
+    runtime: node
+    plan: free
+    branch: rupamnaskar2711-wq-birthday-verse-preview
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /api/status
