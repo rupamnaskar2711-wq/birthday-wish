@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | BirthdayVerse</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #170d2b, #35104e, #6b245f);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+```
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 7%;
+        background: rgba(0,0,0,0.2);
+    }
+
+    .logo {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    button, .create-btn {
+        border: none;
+        border-radius: 10px;
+        padding: 12px 20px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .logout-btn {
+        background: #ff5b91;
+        color: white;
+    }
+
+    main {
+        max-width: 1050px;
+        margin: 65px auto;
+        padding: 20px;
+    }
+
+    .welcome {
+        margin-bottom: 35px;
+    }
+
+    .welcome h1 {
+        font-size: 36px;
+    }
+
+    .dashboard-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 22px;
+    }
+
+    .dashboard-card {
+        padding: 30px;
+        border-radius: 18px;
+        background: rgba(255,255,255,0.1);
+        border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .dashboard-card h2 {
+        font-size: 22px;
+    }
+
+    .create-btn {
+        display: inline-block;
+        background: #ff5b91;
+        color: white;
+        text-decoration: none;
+        margin-top: 12px;
+    }
+
+    #room-list {
+        margin-top: 35px;
+    }
+
+    .room-item {
+        background: rgba(255,255,255,0.1);
+        padding: 18px;
+        border-radius: 12px;
+        margin: 12px 0;
+    }
+
+    #dashboard-message {
+        margin-top: 20px;
+    }
+
+    @media(max-width: 600px) {
+        .welcome h1 {
+            font-size: 27px;
+        }
+
+        header {
+            padding: 15px;
+        }
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🎂 BirthdayVerse</div>
+    <button class="logout-btn" id="logout-btn">Logout</button>
+</header>
+
+<main>
+
+```
+<section class="welcome">
+    <h1>Welcome, <span id="user-name">Friend</span>! 🎉</h1>
+    <p>Your special birthday memories start here.</p>
+</section>
+
+<section class="dashboard-grid">
+
+    <div class="dashboard-card">
+        <h2>🎁 Create Birthday Room</h2>
+        <p>Create a beautiful birthday room with photos, music and memories.</p>
+        <a href="create-room.html" class="create-btn">Create Room</a>
+    </div>
+
+    <div class="dashboard-card">
+        <h2>🎈 My Birthday Rooms</h2>
+        <p>View and manage the birthday rooms you have created.</p>
+        <button class="create-btn" id="refresh-rooms">Refresh Rooms</button>
+    </div>
+
+</section>
+
+<section id="room-list">
+    <h2>My Rooms</h2>
+    <div id="rooms-container">
+        Loading your rooms...
+    </div>
+</section>
+
+<p id="dashboard-message"></p>
+```
+
+</main>
+
+<script type="module" src="js/dashboard.js"></script>
+
+</body>
+</html>
+.delete-btn {
+    background: #ff3f68;
+    color: white;
+    margin: 10px;
+}
+
+.delete-btn:hover {
+    background: #d92850;
+}
+
+.create-btn:hover {
+    opacity: 0.85;
+}
+
+.room-item {
+    margin-bottom: 18px;
+    padding: 22px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.room-item button {
+    margin-top: 12px;
+}

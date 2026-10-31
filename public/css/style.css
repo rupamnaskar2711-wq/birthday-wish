@@ -1,0 +1,950 @@
+/* GLOBAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+
+    background: #0b0717;
+
+    color: white;
+
+    overflow-x: hidden;
+
+    transition: 0.4s;
+
+}
+
+
+/* BACKGROUND */
+
+.background-effects {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: -1;
+
+    overflow: hidden;
+
+}
+
+.glow {
+
+    position: absolute;
+
+    width: 400px;
+
+    height: 400px;
+
+    border-radius: 50%;
+
+    filter: blur(120px);
+
+    opacity: 0.35;
+
+}
+
+.glow-one {
+
+    background: #8b36ff;
+
+    top: 10%;
+
+    left: -150px;
+
+}
+
+.glow-two {
+
+    background: #ff3988;
+
+    right: -150px;
+
+    bottom: 5%;
+
+}
+
+
+/* NAVBAR */
+
+.navbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 25px 7%;
+
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(20px);
+
+}
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+.logo span {
+
+    font-size: 30px;
+
+}
+
+.logo h2 {
+
+    font-size: 23px;
+
+}
+
+.logo h2 span {
+
+    color: #d78cff;
+
+    font-size: inherit;
+
+}
+
+nav {
+
+    display: flex;
+
+    gap: 35px;
+
+}
+
+nav a {
+
+    color: #c9c1d9;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+
+}
+
+nav a:hover {
+
+    color: #e7a0ff;
+
+}
+
+.nav-buttons {
+
+    display: flex;
+
+    gap: 12px;
+
+}
+
+button {
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    transition: 0.3s;
+
+}
+
+.login-btn {
+
+    background: transparent;
+
+    color: white;
+
+    border: 1px solid #755b92;
+
+    padding: 11px 20px;
+
+    border-radius: 12px;
+
+}
+
+.signup-btn {
+
+    background: linear-gradient(120deg, #a34dff, #f04d9d);
+
+    color: white;
+
+    border: none;
+
+    padding: 11px 22px;
+
+    border-radius: 12px;
+
+}
+
+.theme-btn {
+
+    background: rgba(255,255,255,0.1);
+
+    border: none;
+
+    color: white;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+}
+
+.menu-btn {
+
+    display: none;
+
+    background: transparent;
+
+    color: white;
+
+    border: none;
+
+    font-size: 26px;
+
+}
+
+
+/* HERO SECTION */
+
+.hero {
+
+    min-height: 650px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 80px 10%;
+
+    gap: 50px;
+
+}
+
+.hero-content {
+
+    max-width: 600px;
+
+}
+
+.badge {
+
+    display: inline-block;
+
+    background: rgba(180,100,255,0.13);
+
+    border: 1px solid rgba(200,140,255,0.3);
+
+    padding: 10px 18px;
+
+    border-radius: 30px;
+
+    color: #e0a5ff;
+
+    font-size: 12px;
+
+    margin-bottom: 25px;
+
+}
+
+.hero h1 {
+
+    font-size: clamp(38px, 5vw, 65px);
+
+    line-height: 1.2;
+
+    font-weight: 800;
+
+}
+
+.hero h1 span {
+
+    background: linear-gradient(90deg, #bb7aff, #ff77b7);
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+}
+
+.hero-content > p {
+
+    color: #aaa0bd;
+
+    margin-top: 25px;
+
+    line-height: 1.9;
+
+    font-size: 15px;
+
+}
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 35px;
+
+    flex-wrap: wrap;
+
+}
+
+.create-btn {
+
+    background: linear-gradient(120deg, #9d45ff, #f0479d);
+
+    color: white;
+
+    padding: 16px 25px;
+
+    border: none;
+
+    border-radius: 13px;
+
+    font-weight: 600;
+
+    box-shadow: 0 10px 35px rgba(180,60,255,0.25);
+
+}
+
+.create-btn:hover {
+
+    transform: translateY(-4px);
+
+}
+
+.explore-btn {
+
+    background: rgba(255,255,255,0.07);
+
+    color: white;
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    padding: 16px 25px;
+
+    border-radius: 13px;
+
+}
+
+.hero-info {
+
+    display: flex;
+
+    gap: 45px;
+
+    margin-top: 55px;
+
+}
+
+.hero-info h3 {
+
+    font-size: 27px;
+
+    color: #d69aff;
+
+}
+
+.hero-info p {
+
+    font-size: 11px;
+
+    color: #aaa0bd;
+
+}
+
+
+/* BIRTHDAY CARD */
+
+.hero-card-container {
+
+    position: relative;
+
+}
+
+.birthday-card {
+
+    width: 320px;
+
+    padding: 25px;
+
+    border-radius: 25px;
+
+    background: rgba(255,255,255,0.07);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(25px);
+
+    box-shadow: 0 25px 70px rgba(0,0,0,0.3);
+
+    text-align: center;
+
+    animation: float 4s ease-in-out infinite;
+
+}
+
+.card-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 11px;
+
+    color: #d8a2ff;
+
+}
+
+.birthday-image {
+
+    width: 120px;
+
+    height: 120px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin: 30px auto;
+
+    border-radius: 50%;
+
+    background: linear-gradient(140deg, #9d45ff, #f0479d);
+
+    font-size: 60px;
+
+}
+
+.birthday-card h2 {
+
+    font-size: 23px;
+
+    margin-bottom: 12px;
+
+}
+
+.birthday-card > p {
+
+    font-size: 12px;
+
+    color: #bdb2ce;
+
+    line-height: 1.8;
+
+}
+
+.card-divider {
+
+    height: 1px;
+
+    background: rgba(255,255,255,0.12);
+
+    margin: 25px 0;
+
+}
+
+.music-preview {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    text-align: left;
+
+    background: rgba(255,255,255,0.06);
+
+    padding: 12px;
+
+    border-radius: 12px;
+
+}
+
+.music-preview h4 {
+
+    font-size: 11px;
+
+}
+
+.music-preview p {
+
+    color: #a99dbb;
+
+    font-size: 10px;
+
+}
+
+.card-footer {
+
+    margin-top: 25px;
+
+    font-size: 10px;
+
+    color: #bfa5d8;
+
+}
+
+.floating-icon {
+
+    position: absolute;
+
+    font-size: 35px;
+
+    animation: float 3s infinite ease-in-out;
+
+}
+
+.icon-one {
+
+    top: -25px;
+
+    right: -20px;
+
+}
+
+.icon-two {
+
+    bottom: 50px;
+
+    left: -40px;
+
+}
+
+.icon-three {
+
+    bottom: -20px;
+
+    right: 0;
+
+}
+
+@keyframes float {
+
+    0%, 100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-15px);
+
+    }
+
+}
+
+
+/* FEATURES */
+
+.features {
+
+    padding: 100px 8%;
+
+}
+
+.section-heading {
+
+    text-align: center;
+
+    margin-bottom: 55px;
+
+}
+
+.section-heading span {
+
+    color: #d68cff;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+}
+
+.section-heading h2 {
+
+    font-size: clamp(25px, 4vw, 38px);
+
+    margin: 15px 0;
+
+}
+
+.section-heading p {
+
+    color: #aaa0bd;
+
+    font-size: 13px;
+
+}
+
+.feature-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+
+}
+
+.feature-card {
+
+    padding: 30px;
+
+    background: rgba(255,255,255,0.045);
+
+    border: 1px solid rgba(255,255,255,0.09);
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(15px);
+
+    transition: 0.3s;
+
+}
+
+.feature-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #b66bff;
+
+    background: rgba(255,255,255,0.09);
+
+}
+
+.feature-icon {
+
+    font-size: 35px;
+
+    margin-bottom: 20px;
+
+}
+
+.feature-card h3 {
+
+    font-size: 17px;
+
+    margin-bottom: 10px;
+
+}
+
+.feature-card p {
+
+    font-size: 12px;
+
+    color: #aaa0bd;
+
+    line-height: 1.8;
+
+}
+
+
+/* ABOUT */
+
+.about {
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background: rgba(255,255,255,0.025);
+
+}
+
+.about h2 {
+
+    font-size: clamp(25px, 4vw, 40px);
+
+    margin-bottom: 20px;
+
+}
+
+.about p {
+
+    color: #aaa0bd;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* FOOTER */
+
+footer {
+
+    padding: 40px 20px;
+
+    text-align: center;
+
+    border-top: 1px solid rgba(255,255,255,0.08);
+
+}
+
+footer h3 {
+
+    margin-bottom: 10px;
+
+}
+
+footer p {
+
+    color: #aaa0bd;
+
+    font-size: 12px;
+
+    margin: 8px;
+
+}
+
+.copyright {
+
+    margin-top: 25px !important;
+
+}
+
+
+/* MOBILE MENU */
+
+.mobile-menu {
+
+    display: none;
+
+}
+
+
+/* LIGHT THEME */
+
+body.light {
+
+    background: #f5efff;
+
+    color: #241632;
+
+}
+
+body.light .navbar {
+
+    background: rgba(255,255,255,0.6);
+
+}
+
+body.light nav a,
+
+body.light .login-btn,
+
+body.light .menu-btn {
+
+    color: #241632;
+
+}
+
+body.light .feature-card,
+
+body.light .birthday-card {
+
+    background: rgba(255,255,255,0.7);
+
+    color: #241632;
+
+}
+
+body.light .birthday-card > p,
+
+body.light .feature-card p,
+
+body.light .hero-content > p {
+
+    color: #62576f;
+
+}
+
+body.light .music-preview {
+
+    background: rgba(100,50,150,0.08);
+
+}
+
+body.light .music-preview p {
+
+    color: #62576f;
+
+}
+
+body.light .card-footer {
+
+    color: #62576f;
+
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+
+    .hero {
+
+        padding: 70px 6%;
+
+    }
+
+    .hero-info {
+
+        gap: 25px;
+
+    }
+
+    .feature-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .navbar {
+
+        padding: 20px 6%;
+
+    }
+
+    nav,
+
+    .nav-buttons {
+
+        display: none;
+
+    }
+
+    .menu-btn {
+
+        display: block;
+
+    }
+
+    .mobile-menu {
+
+        flex-direction: column;
+
+        gap: 18px;
+
+        padding: 25px;
+
+        background: rgba(30,15,50,0.95);
+
+        text-align: center;
+
+    }
+
+    .mobile-menu.active {
+
+        display: flex;
+
+    }
+
+    .mobile-menu a {
+
+        color: white;
+
+        text-decoration: none;
+
+    }
+
+    .hero {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 65px 6%;
+
+    }
+
+    .hero-buttons {
+
+        justify-content: center;
+
+    }
+
+    .hero-info {
+
+        justify-content: center;
+
+        gap: 25px;
+
+    }
+
+    .hero-card-container {
+
+        margin-top: 50px;
+
+    }
+
+    .birthday-card {
+
+        width: min(320px, 85vw);
+
+    }
+
+    .feature-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .features {
+
+        padding: 70px 7%;
+
+    }
+
+}
+.auth-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 20px;
+}
+
+.auth-links a {
+  padding: 10px 18px;
+  border: 1px solid #a78bfa;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.auth-links a:last-child {
+  background: #a78bfa;
+  color: #171326;
+}

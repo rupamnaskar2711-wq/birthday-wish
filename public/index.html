@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>BirthdayVerse</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+   
+
+    <!-- Background Effects -->
+
+    <div class="background-effects">
+
+        <div class="glow glow-one"></div>
+
+        <div class="glow glow-two"></div>
+
+    </div>
+
+
+    <!-- Navigation -->
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            <span>🎂</span>
+
+            <h2>Birthday<span>Verse</span></h2>
+
+        </div>
+
+        <nav>
+
+            <a href="#home">Home</a>
+
+            <a href="#features">Features</a>
+
+            <a href="#about">About</a>
+
+        </nav>
+
+     <div class="nav-buttons">
+  <button class="theme-btn" type="button" onclick="toggleTheme()">
+    ☀️
+  </button>
+
+  <button class="login-btn" type="button"
+          onclick="window.location.href='login.html'">
+    Sign In
+  </button>
+
+  <button class="signup-btn" type="button"
+          onclick="window.location.href='signup.html'">
+    Sign Up
+  </button>
+</div>
+
+        <button class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- Mobile Navigation -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="#home">Home</a>
+
+        <a href="#features">Features</a>
+
+        <a href="#about">About</a>
+
+        <button class="login-btn">Sign In</button>
+
+        <button class="signup-btn">Sign Up</button>
+
+    </div>
+
+
+    <!-- Hero Section -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <div class="badge">
+
+                    ✨ Make Every Birthday Magical
+
+                </div>
+
+                <h1>
+
+                    Make Their Birthday
+
+                    <span>Unforgettable.</span>
+
+                </h1>
+
+                <p>
+
+                    Create beautiful birthday rooms, share your
+                    favourite memories, add special songs and
+                    surprise someone who means the world to you.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button class="create-btn"
+                    onclick="createRoom()">
+
+                        Create Birthday Room →
+
+                    </button>
+
+                    <button class="explore-btn"
+                    onclick="exploreFeatures()">
+
+                        Explore Features
+
+                    </button>
+
+                </div>
+
+                <div class="hero-info">
+
+                    <div>
+
+                        <h3>20+</h3>
+
+                        <p>Beautiful Themes</p>
+
+                    </div>
+
+                    <div>
+
+                        <h3>20+</h3>
+
+                        <p>Music Choices</p>
+
+                    </div>
+
+                    <div>
+
+                        <h3>∞</h3>
+
+                        <p>Special Memories</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Birthday Preview Card -->
+
+            <div class="hero-card-container">
+
+                <div class="floating-icon icon-one">🎈</div>
+
+                <div class="floating-icon icon-two">✨</div>
+
+                <div class="floating-icon icon-three">🎁</div>
+
+                <div class="birthday-card">
+
+                    <div class="card-top">
+
+                        <span>✦ SPECIAL DAY ✦</span>
+
+                        <span>💗</span>
+
+                    </div>
+
+                    <div class="birthday-image">
+
+                        🎂
+
+                    </div>
+
+                    <h2>Happy Birthday!</h2>
+
+                    <p>
+
+                        Someone special deserves
+                        something extraordinary.
+
+                    </p>
+
+                    <div class="card-divider"></div>
+
+                    <div class="music-preview">
+
+                        <span>🎵</span>
+
+                        <div>
+
+                            <h4>Your Special Song</h4>
+
+                            <p>Made with love</p>
+
+                        </div>
+
+                        <span>▶</span>
+
+                    </div>
+
+                    <div class="card-footer">
+
+                        Made with 💗 on BirthdayVerse
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Features Section -->
+
+        <section class="features" id="features">
+
+            <div class="section-heading">
+
+                <span>WHAT MAKES US SPECIAL</span>
+
+                <h2>Everything for a Perfect Birthday</h2>
+
+                <p>
+
+                    Your imagination, your memories,
+                    your special celebration.
+
+                </p>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">🎨</div>
+
+                    <h3>20 Beautiful Themes</h3>
+
+                    <p>
+                        Choose from 20 unique birthday designs.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">🎵</div>
+
+                    <h3>Special Music</h3>
+
+                    <p>
+                        Add special songs and connect Spotify.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">📸</div>
+
+                    <h3>Memory Gallery</h3>
+
+                    <p>
+                        Upload photos and capture new memories.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">💌</div>
+
+                    <h3>Personal Messages</h3>
+
+                    <p>
+                        Create beautiful birthday wishes.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">🔐</div>
+
+                    <h3>Private Rooms</h3>
+
+                    <p>
+                        Share your birthday room privately.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">✨</div>
+
+                    <h3>Glass Experience</h3>
+
+                    <p>
+                        Enjoy a beautiful glassmorphism interface.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About Section -->
+
+        <section class="about" id="about">
+
+            <h2>Every Memory Deserves a Celebration.</h2>
+
+            <p>
+
+                BirthdayVerse is a place where your feelings
+                become beautiful birthday experiences.
+
+            </p>
+
+            <button class="create-btn" onclick="createRoom()">
+
+                Start Your Celebration →
+
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h3>🎂 BirthdayVerse</h3>
+
+        <p>Every Person Deserves a Special Birthday.</p>
+
+        <p class="copyright">
+
+            © 2026 BirthdayVerse. All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>BirthdayVerse | Guest Room</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/guest.css">
+</head>
+
+<body>
+
+    <main class="guest-container">
+
+        <div class="guest-card">
+
+            <h1 id="guestTitle">
+                🎂 Birthday Celebration
+            </h1>
+
+            <p id="guestRelationship"></p>
+
+            <h2 id="guestBirthday"></h2>
+
+            <div id="guestMessage"></div>
+
+            <p id="guestStatus">
+                Checking your invitation...
+            </p>
+
+        </div>
+
+    </main>
+
+    <script type="module" src="js/guest.js"></script>
+
+</body>
+</html>

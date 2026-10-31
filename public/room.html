@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head><link rel="stylesheet" href="css/music.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Birthday Celebration | BirthdayVerse</title>
+
+<link rel="stylesheet" href="css/room.css">
+```
+
+</head>
+
+<body>
+    <section class="birthday-customization">
+
+    <h1 id="birthday-heading">Happy Birthday! 🎂</h1>
+
+    <p id="birthday-subtitle">
+        A special celebration is waiting for you.
+    </p>
+
+    <div class="countdown-container">
+
+        <div class="countdown-box">
+            <span id="days">00</span>
+            <p>Days</p>
+        </div>
+
+        <div class="countdown-box">
+            <span id="hours">00</span>
+            <p>Hours</p>
+        </div>
+
+        <div class="countdown-box">
+            <span id="minutes">00</span>
+            <p>Minutes</p>
+        </div>
+
+        <div class="countdown-box">
+            <span id="seconds">00</span>
+            <p>Seconds</p>
+        </div>
+
+    </div>
+
+    <p id="birthday-status"></p>
+
+</section>
+<script type="module" src="js/music.js"></script>
+```
+<header class="navbar">
+    <a href="index.html" class="logo">Birthday<span>Verse</span></a>
+    <button id="logoutButton">Logout</button>
+</header>
+
+<main class="container">
+
+    <section class="hero">
+        <!-- THEME SWITCHER -->
+
+<section class="theme-switcher">
+
+    <h2>Choose Your Celebration Theme 🎨</h2>
+
+    <p>Change the appearance of your birthday room.</p>
+
+    <div class="theme-options" id="themeOptions">
+
+        <button data-theme="midnight">🌌 Midnight</button>
+        <button data-theme="romantic">💗 Romantic</button>
+        <button data-theme="ocean">🌊 Ocean</button>
+        <button data-theme="sunset">🌅 Sunset</button>
+        <button data-theme="lavender">💜 Lavender</button>
+        <button data-theme="forest">🌿 Forest</button>
+        <button data-theme="royal">👑 Royal</button>
+        <button data-theme="cherry">🌸 Cherry Blossom</button>
+        <button data-theme="galaxy">✨ Galaxy</button>
+        <button data-theme="minimal">🤍 Minimal</button>
+        <button data-theme="rose">🌹 Rose Garden</button>
+        <button data-theme="aurora">🌈 Aurora</button>
+        <button data-theme="neon">💡 Neon Night</button>
+        <button data-theme="cloud">☁️ Dreamy Clouds</button>
+        <button data-theme="fire">🔥 Fire Glow</button>
+        <button data-theme="ice">❄️ Ice Crystal</button>
+        <button data-theme="cosmic">🪐 Cosmic Space</button>
+        <button data-theme="peach">🍑 Peach Paradise</button>
+        <button data-theme="silver">🩶 Silver Elegance</button>
+        <button data-theme="classic">🎂 Classic Celebration</button>
+
+    </div>
+
+</section>
+        <span class="tag">A SPECIAL CELEBRATION</span>
+
+        <h1>Happy Birthday, <span id="personName">Someone Special</span>! 🎂</h1>
+
+        <p id="relationshipText">
+            Celebrating someone wonderful.
+        </p>
+
+        <div class="birthday-icon">🎉</div>
+    </section>
+
+    <section class="countdown-card">
+
+        <h2 id="countdownTitle">Birthday Countdown</h2>
+
+        <div class="countdown">
+
+            <div class="time-box">
+                <span id="days">00</span>
+                <small>Days</small>
+            </div>
+
+            <div class="time-box">
+                <span id="hours">00</span>
+                <small>Hours</small>
+            </div>
+
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <small>Minutes</small>
+            </div>
+
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <small>Seconds</small>
+            </div>
+
+        </div>
+
+        <p id="countdownMessage"></p>
+
+    </section>
+
+    <section class="message-card">
+
+        <span class="tag">A MESSAGE FROM THE HEART</span>
+
+        <h2>A Little Something Special 💌</h2>
+
+        <p id="birthdayMessage">
+            Your special birthday message will appear here.
+        </p>
+
+    </section>
+
+    <section class="details-card">
+
+        <h2>Celebration Details</h2>
+
+        <p>🎂 Birthday: <span id="birthdayDate"></span></p>
+
+        <p>💜 Relationship: <span id="relationshipDetail"></span></p>
+
+        <p>✨ Theme: <span id="themeName"></span></p>
+
+    </section>
+
+    <footer>
+        Made with 💜 using BirthdayVerse
+    </footer>
+
+</main>
+
+<script type="module" src="js/room.js"></script>
+```
+<script type="module" src="js/sharing.js"></script>
+<section class="room-editor">
+
+    <h2>🎨 Customize Your Birthday Room</h2>
+    <p>Make this birthday room special!</p>
+
+    <form id="room-editor-form">
+
+        <label for="birthday-name">Birthday Person's Name</label>
+        <input
+            type="text"
+            id="birthday-name"
+            placeholder="Enter birthday person's name"
+            required
+        >
+
+        <label for="birthday-date">Birthday Date</label>
+        <input
+            type="date"
+            id="birthday-date"
+            required
+        >
+
+        <label for="room-theme">Choose Room Theme</label>
+
+        <select id="room-theme">
+            <option value="purple">Purple Dream 💜</option>
+            <option value="pink">Pink Celebration 💗</option>
+            <option value="blue">Blue Galaxy 💙</option>
+        </select>
+
+        <button type="submit">Save Changes</button>
+
+        <p id="editor-message"></p>
+
+    </form>
+<script type="module" src="js/room-editor.js"></script>
+<section class="photo-gallery">
+
+    <h2>📸 Birthday Memories</h2>
+
+    <p>Upload and enjoy your favourite memories.</p>
+
+    <div class="upload-area">
+
+        <input
+            type="file"
+            id="photo-input"
+            accept="image/jpeg,image/png,image/webp"
+            multiple
+        >
+
+        <button type="button" id="upload-photos">
+            Upload Photos 🎁
+        </button>
+
+    </div>
+
+    <p id="gallery-message"></p>
+
+    <div id="photo-container" class="photo-grid">
+        Loading photos...
+    </div>
+
+</section>
+</section>
+<script type="module" src="js/photo-gallery.js"></script>
+<script type="module" src="js/room.js"></script>
+<script type="module" src="js/countdown.js"></script>
+<script type="module" src="js/room-editor.js"></script>
+<script type="module" src="js/guest-gallery.js"></script>
+
+</body>
+</html>
+<!-- Birthday Music Player -->
+<section class="music-section">
+
+    <div class="music-card">
+
+        <h2>🎵 Birthday Music Player</h2>
+
+        <p>Choose a melody for this special birthday.</p>
+
+        <select id="musicSelect">
+            <option value="">Select Birthday Music</option>
+            <option value="birthday">Birthday Celebration</option>
+            <option value="romantic">Romantic Melody</option>
+            <option value="piano">Soft Piano</option>
+            <option value="dream">Dreamy Music</option>
+            <option value="happy">Happy Moments</option>
+            <option value="love">Love Melody</option>
+            <option value="calm">Calm Evening</option>
+            <option value="sunset">Golden Sunset</option>
+            <option value="magic">Magical Moments</option>
+            <option value="stars">Under The Stars</option>
+            <option value="peace">Peaceful Piano</option>
+            <option value="memories">Beautiful Memories</option>
+            <option value="hope">Hopeful Melody</option>
+            <option value="celebrate">Let's Celebrate</option>
+            <option value="nature">Nature Sounds</option>
+            <option value="soft">Soft Guitar</option>
+            <option value="cinematic">Cinematic Feeling</option>
+            <option value="dreamy">Dreamy Piano</option>
+            <option value="special">Special Moments</option>
+            <option value="classic">Classic Birthday</option>
+        </select>
+
+        <audio id="birthdayAudio" controls></audio>
+
+        <div class="volume-control">
+            <label for="musicVolume">Volume</label>
+            <input
+                type="range"
+                id="musicVolume"
+                min="0"
+                max="1"
+                step="0.01"
+                value="0.5"
+            >
+        </div>
+
+        <div class="custom-music">
+            <h3>Upload Your Own Music</h3>
+
+            <input
+                type="file"
+                id="customMusic"
+                accept="audio/*"
+            >
+
+            <p id="musicStatus"></p>
+        </div>
+
+        <button id="saveMusic">Save Music Selection</button>
+
+    </div>
+
+</section>
+<script type="module" src="js/countdown.js"></script>

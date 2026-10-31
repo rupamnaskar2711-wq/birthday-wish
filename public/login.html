@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | BirthdayVerse</title>
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+    <div class="auth-container">
+
+        <div class="auth-welcome">
+            <h1>BirthdayVerse 🎂</h1>
+            <h2>Welcome Back!</h2>
+            <p>Enter your account and continue creating beautiful birthday memories.</p>
+        </div>
+
+        <div class="auth-card">
+            <h2>Sign In</h2>
+            <p class="subtitle">Welcome back to BirthdayVerse</p>
+
+            <form id="login-form">
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email"
+                           placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+
+                    <div class="password-wrapper">
+                        <input type="password" id="password"
+                               placeholder="Enter your password" required>
+
+                        <button type="button"
+                                class="password-toggle"
+                                aria-label="Show password"
+                                aria-pressed="false">👁</button>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Sign In</button>
+
+                <p id="auth-message" class="auth-message"></p>
+
+            </form>
+
+            <p class="switch-auth">
+                Don't have an account?
+                <a href="signup.html">Create Account</a>
+            </p>
+
+            <a href="index.html" class="back-home">← Back to Home</a>
+        </div>
+
+    </div>
+
+    <script type="module" src="js/auth.js"></script>
+</body>
+</html>

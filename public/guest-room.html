@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Invitation | BirthdayVerse</title>
+    <link rel="stylesheet" href="css/guest.css">
+
+```
+<style>
+    body {
+        margin: 0;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #170d2b, #43144f, #a33e78);
+        color: white;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    header {
+        padding: 25px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .guest-container {
+        max-width: 850px;
+        margin: 45px auto;
+        padding: 25px;
+    }
+
+    .guest-card {
+        padding: 40px 25px;
+        background: rgba(255,255,255,0.12);
+        border: 1px solid rgba(255,255,255,0.2);
+        border-radius: 22px;
+    }
+
+    .birthday-icon {
+        font-size: 65px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .guest-description {
+        line-height: 1.7;
+        color: #f4dced;
+    }
+
+    .guest-message {
+        margin-top: 25px;
+    }
+
+    .guest-button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 13px 24px;
+        background: #ff5b91;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+
+    #guest-error {
+        color: #ffd1df;
+    }
+
+    @media(max-width: 600px) {
+        h1 {
+            font-size: 27px;
+        }
+
+        .guest-container {
+            margin: 20px auto;
+        }
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+<header>
+    🎂 BirthdayVerse
+</header>
+
+<main class="guest-container">
+
+```
+<section class="guest-card">
+
+    <div class="birthday-icon">🎉</div>
+
+    <h1 id="guest-title">You're Invited!</h1>
+
+    <p class="guest-description" id="guest-description">
+        Someone has invited you to celebrate a special birthday.
+    </p>
+
+    <div class="guest-message" id="guest-message">
+        Loading birthday invitation...
+    </div>
+
+    <a href="#" class="guest-button" id="guest-enter" hidden>
+        Enter Birthday Room
+    </a>
+
+    <p id="guest-error"></p>
+
+</section>
+```
+
+</main>
+
+<script type="module" src="js/guest.js"></script>
+
+</body>
+</html>

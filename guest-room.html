@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/guest-gallery.css">
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>BirthdayVerse | Guest Room</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/guest.css">
+</head>
+
+<body>
+
+    <main class="guest-container">
+
+        <div class="guest-card">
+
+            <h1 id="guestTitle">
+                🎂 Birthday Celebration
+            </h1>
+
+            <p id="guestRelationship"></p>
+
+            <h2 id="guestBirthday"></h2>
+
+            <div id="guestMessage"></div>
+
+            <p id="guestStatus">
+                Checking your invitation...
+            </p>
+
+        </div>
+
+    </main>
+
+    <script type="module" src="js/guest.js"></script>
+<script type="module" src="js/guest-gallery.js"></script>
+</body>
+</html>
+<section class="guest-gallery-section">
+
+    <div class="guest-gallery-card">
+
+        <h2>📸 Birthday Photo Gallery</h2>
+
+        <p>Share your favourite birthday memories!</p>
+
+        <input
+            type="text"
+            id="guestName"
+            placeholder="Your name"
+            maxlength="60"
+        >
+
+        <input
+            type="file"
+            id="guestPhotoInput"
+            accept="image/jpeg,image/png,image/webp"
+        >
+
+        <button id="uploadGuestPhoto">
+            Upload Photo
+        </button>
+
+        <p id="guestPhotoStatus"></p>
+
+        <div id="guestPhotoGallery"
+             class="guest-photo-grid">
+        </div>
+
+    </div>
+
+</section>

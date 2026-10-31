@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/sharing.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Create Birthday Room | BirthdayVerse</title>
+
+<link rel="stylesheet" href="css/create-room.css">
+```
+
+</head>
+
+<body>
+
+```
+<div class="background-glow glow-one"></div>
+<div class="background-glow glow-two"></div>
+
+<header class="navbar">
+    <a href="index.html" class="logo">Birthday<span>Verse</span></a>
+    <a href="dashboard.html" class="back-button">← Dashboard</a>
+</header>
+
+<main class="container">
+
+    <section class="heading">
+        <span class="tag">YOUR SPECIAL MOMENT</span>
+        <h1>Create a Birthday <span>Room</span></h1>
+        <p>Create a beautiful private space for someone special.</p>
+    </section>
+
+    <form id="roomForm" class="room-form">
+
+        <div class="form-group">
+            <label for="personName">Special Person's Name</label>
+            <input
+                type="text"
+                id="personName"
+                placeholder="Enter their name"
+                maxlength="60"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="relationship">Your Relationship</label>
+
+            <select id="relationship" required>
+                <option value="">Select relationship</option>
+                <option>Girlfriend</option>
+                <option>Boyfriend</option>
+                <option>Best Friend</option>
+                <option>Friend</option>
+                <option>Brother</option>
+                <option>Sister</option>
+                <option>Mother</option>
+                <option>Father</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="birthday">Birthday Date</label>
+            <input type="date" id="birthday" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Your Special Message</label>
+            <textarea
+                id="message"
+                placeholder="Write something beautiful..."
+                maxlength="1000"
+                rows="5"
+            ></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="theme">Choose Your Theme</label>
+
+            <select id="theme" required>
+                <option value="midnight">Midnight Purple</option>
+                <option value="romantic">Romantic Pink</option>
+                <option value="ocean">Ocean Blue</option>
+                <option value="sunset">Golden Sunset</option>
+                <option value="lavender">Lavender Dream</option>
+                <option value="forest">Forest Green</option>
+                <option value="royal">Royal Gold</option>
+                <option value="cherry">Cherry Blossom</option>
+                <option value="galaxy">Galaxy</option>
+                <option value="minimal">Minimal White</option>
+                <option value="rose">Rose Garden</option>
+                <option value="aurora">Aurora</option>
+                <option value="neon">Neon Night</option>
+                <option value="cloud">Dreamy Clouds</option>
+                <option value="fire">Fire Glow</option>
+                <option value="ice">Ice Crystal</option>
+                <option value="cosmic">Cosmic Space</option>
+                <option value="peach">Peach Paradise</option>
+                <option value="silver">Silver Elegance</option>
+                <option value="classic">Classic Celebration</option>
+            </select>
+        </div>
+
+        <div class="privacy-note">
+            🔒 Your room will be private by default.
+            Only authorised people should be able to access it.
+        </div>
+
+        <button type="submit" id="createButton">
+            Create Birthday Room ✨
+        </button>
+
+        <p id="statusMessage" aria-live="polite"></p>
+
+    </form>
+
+</main>
+
+<script type="module" src="js/create-room.js"></script>
+```
+
+</body>
+</html>
